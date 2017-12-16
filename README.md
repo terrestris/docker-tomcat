@@ -4,6 +4,7 @@ Based on [anapsix/alpine-java:8_server-jre_unlimited](https://hub.docker.com/r/a
 
 * Alpine Linux
 * Java Server JRE 8 with unlimited JCE Policy
+* Tomcat 8.5
 
 #### How to build?
 
