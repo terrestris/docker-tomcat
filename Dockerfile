@@ -23,3 +23,5 @@ RUN apk del curl && \
 EXPOSE 8080
 
 CMD ["sh", "-c", "$CATALINA_HOME/bin/catalina.sh run"]
+
+WORKDIR $CATALINA_HOME
