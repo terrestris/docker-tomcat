@@ -3,7 +3,7 @@ FROM anapsix/alpine-java:8_server-jre_unlimited
 
 # Environment variables
 ENV TOMCAT_MAJOR=8 \
-    TOMCAT_VERSION=8.5.30 \
+    TOMCAT_VERSION=8.5.31 \
     CATALINA_HOME=/opt/tomcat
 
 # init
