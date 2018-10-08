@@ -1,5 +1,5 @@
-# Use a minimal tomcat image as parent
-FROM anapsix/alpine-java:8_server-jre_unlimited
+# Use a minimal image as parent
+FROM openjdk:8-jdk-alpine
 
 # Environment variables
 ENV TOMCAT_MAJOR=8 \
@@ -8,7 +8,10 @@ ENV TOMCAT_MAJOR=8 \
 
 # init
 RUN apk -U upgrade --update && \
-    apk add curl
+    apk add curl && \
+    apk add ttf-dejavu
+
+RUN mkdir /opt
 
 # install tomcat
 RUN curl -jkSL -o /tmp/apache-tomcat.tar.gz http://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \

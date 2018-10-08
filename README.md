@@ -1,9 +1,9 @@
 ## A tomcat docker image
 
-Based on [anapsix/alpine-java:8_server-jre_unlimited](https://hub.docker.com/r/anapsix/alpine-java/):
+Based on [openjdk:8-jdk-alpine](https://hub.docker.com/r/library/openjdk/):
 
 * Alpine Linux
-* Java Server JRE 8 with unlimited JCE Policy
+* OpenJDK 8
 * Tomcat 8.5
 
 #### How to build?
