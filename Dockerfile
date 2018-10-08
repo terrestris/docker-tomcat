@@ -22,6 +22,8 @@ RUN apk del curl && \
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "$CATALINA_HOME/bin/catalina.sh run"]
+COPY startup.sh /opt/startup.sh
+
+ENTRYPOINT /opt/startup.sh
 
 WORKDIR $CATALINA_HOME
