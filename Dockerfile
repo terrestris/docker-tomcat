@@ -11,7 +11,7 @@ RUN apk -U upgrade --update && \
     apk add curl && \
     apk add ttf-dejavu
 
-RUN mkdir /opt
+RUN mkdir -p /opt
 
 # install tomcat
 RUN curl -jkSL -o /tmp/apache-tomcat.tar.gz http://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR}/v${TOMCAT_VERSION}/bin/apache-tomcat-${TOMCAT_VERSION}.tar.gz && \
