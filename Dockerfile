@@ -1,4 +1,8 @@
+
+
 # Use a minimal image as parent
+###
+hello
 FROM openjdk:8-jdk-alpine
 
 # Environment variables
